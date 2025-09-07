@@ -11,7 +11,7 @@
         font-family:'Poppins',sans-serif;
         background:linear-gradient(135deg,#0f172a,#0b3d91);
         color:#fff;
-        display:flex;
+        display:block;
         justify-content:center;
         align-items:center;
         height:100vh;
@@ -39,13 +39,25 @@
         transition:transform .2s ease;
         }
         a:hover{transform:scale(1.05);}
+        .atajos {
+            padding-top: 10px;
+        }
     </style>
-    </head>
-    <body>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <div class="atajos">
+        <a class="boton" href="{% url 'inicio' %}">Inicio</a> <!--Para agregar esto debo agregar name='inicio' en el urls de la app-->
+        <!-- <a class="boton" href="{% url 'empresa' %}">Empresa</a> -->
+        <a class="boton" href="{% url 'contacto' %}">Contacto</a>
+        <a class="boton" href="{% url 'formulario' %}">Formulario</a>
+        <a class="boton" href="{% url 'mvc' %}">¿Qué es el MVC?</a>
+    </div>
+    
     <div class="card">
         <h1>Bienvenido</h1>
         <p>Este es el portal principal. Aquí encontrarás información sobre nuestra empresa y podrás contactarnos fácilmente.</p>
-        <a href="empresa.html">Conócenos</a>
+        <a href="{% url 'empresa' %}">Conócenos</a>
     </div>
 </body>
 </html>
