@@ -50,8 +50,8 @@
         button:hover{transform:scale(1.05)}
         #resultado{margin-top:24px;padding:16px;background:#fff1;border-radius:12px;font-weight:600}
     </style>
-    </head>
-    <body>
+</head>
+<body>
     <header class="banner">
         <div class="avatar"><div class="initials">AO</div></div>
         <div>
@@ -60,7 +60,7 @@
         </div>
     </header>
 
-    <form id="formAlumno">
+    <form method="POST" action="{%url 'formulario' %}">
         {% csrf_token %}
         <label for="rutAlumno">Rut:</label>
         <input type="text" id="rutAlumno" name="rutAlumno" required>

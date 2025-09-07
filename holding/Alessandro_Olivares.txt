@@ -1,0 +1,5 @@
+Nombre: Alessandro
+Apellido Paterno: Olivares
+Apellido Materno: Romero
+RUT: 20254360-k
+Fecha de nacimiento: 1999-05-27
