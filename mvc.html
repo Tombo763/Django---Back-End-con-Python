@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modelo Vista Controlador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root{
+        --bg-1: #0f172a;
+        --bg-2: #0b3d91;
+        --accent-1: #ffb86b;
+        --accent-2: #7ce7c6;
+        --glass: rgba(255,255,255,0.08);
+        --card-radius: 18px;
+        --shadow: 0 8px 30px rgba(0,0,0,0.5);
+        }
+        *{box-sizing:border-box}
+        body{
+        margin:0;
+        font-family:'Poppins',sans-serif;
+        background: linear-gradient(135deg, var(--bg-1) 0%, #09203f 45%, var(--bg-2) 100%);
+        color:#e6eef8;
+        padding:40px;
+        line-height:1.6;
+        }
+        h1{
+        text-align:center;
+        font-size:32px;
+        margin-bottom:30px;
+        font-weight:800;
+        color:var(--accent-2);
+        }
+        .card{
+        max-width:900px;
+        margin:0 auto;
+        background: var(--glass);
+        padding:30px;
+        border-radius: var(--card-radius);
+        box-shadow: var(--shadow);
+        }
+        ol li{
+        margin-bottom:20px;
+        }
+        strong{
+        color:var(--accent-1);
+        }
+        ul{
+        margin:10px 0 0 20px;
+        }
+        p{
+        margin-top:20px;
+        }
+        .resumen{
+        background: rgba(255,255,255,0.05);
+        padding:15px;
+        border-left:4px solid var(--accent-2);
+        border-radius:12px;
+        font-weight:600;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Relación entre el MVC y el Back End</h1>
+    <div class="card">
+        <p>El patrón MVC es una forma de organizar y estructurar el código de una aplicación para separar responsabilidades:</p>
+        <ol>
+        <li><strong>Modelo (M):</strong>
+            <ul>
+            <li>Representa la lógica de datos de la aplicación.</li>
+            <li>Se encarga de conectarse a la base de datos, aplicar reglas de negocio y gestionar la información.</li>
+            <li>En el backend, suele estar escrito en lenguajes como Python (Django, Flask), Java (Spring), PHP (Laravel), JavaScript/TypeScript (Node.js/Express).</li>
+            <li><strong>Ejemplo:</strong> una clase Alumno que define atributos como rut, nombre, apellidos, fecha de nacimiento y métodos para guardarlos o consultarlos en la base de datos.</li>
+            </ul>
+        </li>
+        <li><strong>Vista (V):</strong>
+            <ul>
+            <li>Es la parte que el usuario ve e interactúa (HTML, CSS, JavaScript, React, etc.).</li>
+            <li>Aunque suele asociarse al frontend, el backend muchas veces genera las vistas dinámicamente (ejemplo: Django Templates, PHP con Blade de Laravel).</li>
+            <li><strong>Ejemplo:</strong> un formulario HTML para registrar un alumno.</li>
+            </ul>
+        </li>
+        <li><strong>Controlador (C):</strong>
+            <ul>
+            <li>Actúa como intermediario entre el modelo y la vista.</li>
+            <li>Recibe las solicitudes del usuario, ejecuta la lógica necesaria (consultar base de datos, validar, procesar) y devuelve la respuesta adecuada.</li>
+            <li>En backend, los controladores suelen ser funciones o clases que responden a rutas (URLs).</li>
+            <li><strong>Ejemplo:</strong> en Django, una view que recibe el POST del formulario y guarda los datos del alumno en el modelo.</li>
+            </ul>
+        </li>
+        </ol>
+        <div class="resumen">
+        <p><strong>En resumen:</strong> los lenguajes backend (Python, Java, PHP, JavaScript con Node.js, Ruby, etc.) son los encargados de implementar principalmente el <strong>Modelo</strong> y el <strong>Controlador</strong> del patrón MVC, mientras que el frontend se centra en la <strong>Vista</strong>.</p>
+        </div>
+    </div>
+</body>
+</html>
