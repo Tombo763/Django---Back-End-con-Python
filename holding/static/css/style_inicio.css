@@ -1,0 +1,85 @@
+/* Estilos globales */
+body, h1, h2, h3, h4, h5, h6, p, a, button, span, li, div {
+    color: #ffffffcb !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg,#0f172a,#0b3d91);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 40px;
+    max-width: 600px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    margin: 20px auto;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background: linear-gradient(45deg,#ffb86b,#7ce7c6);
+    color: #0f172a; /* texto de los botones en oscuro para contraste */
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .2s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a:hover{
+    transform: scale(1.05);
+}
+
+.atajos {
+    margin-bottom: 26px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Estilos del carrusel */
+.carrusel-container {
+    max-width: 800px;  
+    margin: 40px auto;  
+}
+
+#miCarrusel img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto; /* centra la imagen horizontalmente */
+}
+
+/* Opcional: elimina fondo oscuro de controles del carrusel para que no interfiera */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* hace que los iconos sean visibles en fondo oscuro */
+}

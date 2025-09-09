@@ -1,5 +1,0 @@
-Nombre: Teorinda del Carmen
-Apellido Paterno: Romero
-Apellido Materno: LLanos
-RUT: 11898840-k
-Fecha de nacimiento: 1971-04-05
