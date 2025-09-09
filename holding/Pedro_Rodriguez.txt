@@ -1,0 +1,5 @@
+Nombre: Pedro
+Apellido Paterno: Rodriguez
+Apellido Materno: Medina
+RUT: 19675480-3
+Fecha de nacimiento: 2000-08-09
